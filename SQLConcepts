@@ -1,0 +1,86 @@
+1) Tell me about the Battery Smart company
+Battery Smart is India's largest battery-swapping network for electric two and three-wheelers. They provide lithium-ion batteries on a pay-per-use basis through an asset-light network of partner swap stations. With over 1,600 swapping stations across more than 50 cities, Battery Smart has facilitated around 90 million cumulative swaps for nearly 90,000 drivers. The company has raised $151.3 million in funding and reported a revenue of ₹279 crore in FY25, a 49% jump from FY24 ¹ ².
+
+2) How many battery swaps does Battery Smart perform in Delhi NCR in a day?"
+
+1. Battery Smart performs approximately 125,000 battery swaps daily across its network in India.
+2. The Delhi NCR region is one of Battery Smart's most dense and important markets.
+3. Battery Smart has over 1,500 swap stations across its entire network.
+4. The company has reported serving over 55,000 drivers across 50 cities in India.
+5. Battery Smart's daily swap count has grown significantly, surpassing 100,000 daily swaps in August 2024.
+
+It also noted that it had stations on nearly every square kilometer of Delhi
+3) Pitch
+Here's a more detailed pitch:
+
+"Mr. President, leveraging renewable energy sources is key to America's economic and environmental future. By investing in solar, wind, and hydro power, we can:
+
+1. Reduce greenhouse gas emissions
+2. Create new job opportunities
+3. Enhance energy independence
+4. Stimulate innovation
+
+Let's prioritize clean energy to ensure a sustainable future for America."
+Promoting electric vehicles (EVs) can significantly contribute to increasing the adoption of renewable energy sources. Here's how:
+
+1. _Increased demand for renewable energy_: As EVs gain popularity, the demand for renewable energy sources like solar and wind power will rise to charge these vehicles.
+2. _Reduced greenhouse gas emissions_: EVs produce zero tailpipe emissions, reducing air pollution and greenhouse gas emissions.
+3. _Energy efficiency_: EVs convert about 60-70% of the electrical energy from the grid to power the wheels, while gasoline-powered vehicles only convert about 20% of the energy in gasoline.
+
+To further accelerate the transition:
+
+1. _Invest in renewable energy infrastructure_: Governments and companies can invest in solar panels, wind farms, and charging infrastructure.
+2. _Incentivize EV adoption_: Offer tax credits, rebates, or exemptions from certain fees to encourage people to switch to EVs.
+3. _Promote sustainable energy policies_: Implement policies supporting renewable energy growth, such as net metering laws and renewable portfolio standards.
+
+By driving the adoption of EVs and renewable energy, we can create a cleaner, more sustainable transportation system.
+
+Summary of above point:
+Electric vehicles promote renewable energy by increasing demand for clean energy, reducing greenhouse gas emissions, and improving energy efficiency. Let's adopt EVs and drive a sustainable future!
+=========================
+Type of Questions asked:
+Here are some SQL-related questions that Battery Smart might ask in a Strategy Operations Intern interview:
+
+SQL Querying Questions
+1. Retrieve the total number of battery swaps per city.
+
+SELECT 
+  city, 
+  COUNT(*) AS total_battery_swaps
+FROM 
+  battery_swaps
+GROUP BY 
+  city
+ORDER BY 
+  total_battery_swaps DESC;
+
+*Assumptions:*
+
+- `battery_swaps` is the table name.
+- `city` is the column name for the city information.
+
+*How it works:*
+
+1. `GROUP BY city` groups the data by city.
+2. `COUNT(*)` counts the number of rows (battery swaps) for each city.
+3. `ORDER BY total_battery_swaps DESC` sorts the results in descending order by the total number of battery swaps.
+
+*Example Output:*
+city total_battery_swaps
+New Delhi 10000
+Mumbai 8000
+Bengaluru 6000
+... ...
+This query will give you the total number of battery swaps per city, helping you analyze the data and identify trends.
+
+
+2. Find the top 3 cities with the highest number of battery swaps.
+SELECT 
+  city, 
+  COUNT(*) AS total_battery_swaps
+FROM 
+  battery_swaps
+GROUP BY 
+  city
+ORDER BY 
+  total_battery_swaps DESC
